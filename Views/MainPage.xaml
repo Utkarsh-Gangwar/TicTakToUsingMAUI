@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:TicTakToUsingMAUI.ViewModels"
+             x:Class="TicTakToUsingMAUI.Views.MainPage">
+
+    <ContentPage.BindingContext>
+        <vm:MainPageVM/>
+    </ContentPage.BindingContext>
+
+
+    <Grid RowDefinitions="*,*,*,*" ColumnDefinitions="*,*,*">
+        <Button Grid.Row="0" Grid.Column="0" BackgroundColor="Blue" Margin="10" TextColor="White" Text="{Binding B00}" FontSize="Large" Command="{Binding BoxClickedCommand}" CommandParameter="00"/>
+        <Button Grid.Row="0" Grid.Column="1" BackgroundColor="Blue" Margin="10" TextColor="White" Text="{Binding B01}" FontSize="Large" Command="{Binding BoxClickedCommand}" CommandParameter="01"/>
+        <Button Grid.Row="0" Grid.Column="2" BackgroundColor="Blue" Margin="10" TextColor="White" Text="{Binding B02}" FontSize="Large" Command="{Binding BoxClickedCommand}" CommandParameter="02"/>
+        <Button Grid.Row="1" Grid.Column="0" BackgroundColor="Blue" Margin="10" TextColor="White" Text="{Binding B10}" FontSize="Large" Command="{Binding BoxClickedCommand}" CommandParameter="10"/>
+        <Button Grid.Row="1" Grid.Column="1" BackgroundColor="Blue" Margin="10" TextColor="White" Text="{Binding B11}" FontSize="Large" Command="{Binding BoxClickedCommand}" CommandParameter="11"/>
+        <Button Grid.Row="1" Grid.Column="2" BackgroundColor="Blue" Margin="10" TextColor="White" Text="{Binding B12}" FontSize="Large" Command="{Binding BoxClickedCommand}" CommandParameter="12"/>
+        <Button Grid.Row="2" Grid.Column="0" BackgroundColor="Blue" Margin="10" TextColor="White" Text="{Binding B20}" FontSize="Large" Command="{Binding BoxClickedCommand}" CommandParameter="20"/>
+        <Button Grid.Row="2" Grid.Column="1" BackgroundColor="Blue" Margin="10" TextColor="White" Text="{Binding B21}" FontSize="Large" Command="{Binding BoxClickedCommand}" CommandParameter="21"/>
+        <Button Grid.Row="2" Grid.Column="2" BackgroundColor="Blue" Margin="10" TextColor="White" Text="{Binding B22}" FontSize="Large" Command="{Binding BoxClickedCommand}" CommandParameter="22"/>
+        <Button Grid.Row="3" Grid.Column="2" BackgroundColor="Gray" Margin="10" TextColor="White" Text="Clear Game Bord" FontSize="Medium" Command="{Binding ClearBordCommand}"/>
+    </Grid>
+</ContentPage>

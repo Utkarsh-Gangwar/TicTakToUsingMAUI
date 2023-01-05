@@ -1,0 +1,1 @@
+D:\github\test\TicTakToUsingMAUI\TicTakToUsingMAUI.csproj;x64
